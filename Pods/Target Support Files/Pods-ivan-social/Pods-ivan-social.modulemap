@@ -1,0 +1,6 @@
+framework module Pods_ivan_social {
+  umbrella header "Pods-ivan-social-umbrella.h"
+
+  export *
+  module * { export * }
+}
