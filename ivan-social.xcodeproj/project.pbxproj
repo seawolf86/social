@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E52FABEA27E26BAAD47AB3C /* Pods_ivan_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F043008F2D3C123C96C4CB7 /* Pods_ivan_social.framework */; };
 		97F311D71DA0204200E38A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F311D61DA0204200E38A10 /* AppDelegate.swift */; };
-		97F311D91DA0204200E38A10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F311D81DA0204200E38A10 /* ViewController.swift */; };
+		97F311D91DA0204200E38A10 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F311D81DA0204200E38A10 /* SignInVC.swift */; };
 		97F311DC1DA0204200E38A10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F311DA1DA0204200E38A10 /* Main.storyboard */; };
 		97F311DE1DA0204200E38A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F311DD1DA0204200E38A10 /* Assets.xcassets */; };
 		97F311E11DA0204200E38A10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F311DF1DA0204200E38A10 /* LaunchScreen.storyboard */; };
+		97F311E91DA020D000E38A10 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97F311E81DA020D000E38A10 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CE0FB98F39465F742994ADC /* Pods-ivan-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ivan-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ivan-social/Pods-ivan-social.debug.xcconfig"; sourceTree = "<group>"; };
+		2F043008F2D3C123C96C4CB7 /* Pods_ivan_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ivan_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		520987680ADB953AAC7AC880 /* Pods-ivan-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ivan-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-ivan-social/Pods-ivan-social.release.xcconfig"; sourceTree = "<group>"; };
 		97F311D31DA0204200E38A10 /* ivan-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ivan-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F311D61DA0204200E38A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97F311D81DA0204200E38A10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97F311D81DA0204200E38A10 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		97F311DB1DA0204200E38A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97F311DD1DA0204200E38A10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97F311E01DA0204200E38A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97F311E21DA0204200E38A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97F311E81DA020D000E38A10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E52FABEA27E26BAAD47AB3C /* Pods_ivan_social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2716E88A3A0C834A9F2B2782 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F043008F2D3C123C96C4CB7 /* Pods_ivan_social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97A386971DA0235700155BEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		97A386981DA0236200155BEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		97A386991DA0236800155BEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				97F311D81DA0204200E38A10 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		97F311CA1DA0204100E38A10 = {
 			isa = PBXGroup;
 			children = (
 				97F311D51DA0204200E38A10 /* ivan-social */,
 				97F311D41DA0204200E38A10 /* Products */,
+				9908E257C9B6F886405AB312 /* Pods */,
+				2716E88A3A0C834A9F2B2782 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +93,26 @@
 		97F311D51DA0204200E38A10 /* ivan-social */ = {
 			isa = PBXGroup;
 			children = (
+				97A386971DA0235700155BEA /* Model */,
+				97A386981DA0236200155BEA /* View */,
+				97A386991DA0236800155BEA /* Controller */,
 				97F311D61DA0204200E38A10 /* AppDelegate.swift */,
-				97F311D81DA0204200E38A10 /* ViewController.swift */,
 				97F311DA1DA0204200E38A10 /* Main.storyboard */,
 				97F311DD1DA0204200E38A10 /* Assets.xcassets */,
 				97F311DF1DA0204200E38A10 /* LaunchScreen.storyboard */,
+				97F311E81DA020D000E38A10 /* GoogleService-Info.plist */,
 				97F311E21DA0204200E38A10 /* Info.plist */,
 			);
 			path = "ivan-social";
+			sourceTree = "<group>";
+		};
+		9908E257C9B6F886405AB312 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CE0FB98F39465F742994ADC /* Pods-ivan-social.debug.xcconfig */,
+				520987680ADB953AAC7AC880 /* Pods-ivan-social.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97F311E51DA0204200E38A10 /* Build configuration list for PBXNativeTarget "ivan-social" */;
 			buildPhases = (
+				C0CC7E95FDED92942A472682 /* Check Pods Manifest.lock */,
 				97F311CF1DA0204100E38A10 /* Sources */,
 				97F311D01DA0204100E38A10 /* Frameworks */,
 				97F311D11DA0204100E38A10 /* Resources */,
+				A05AE251320243E9523A075D /* Embed Pods Frameworks */,
+				3324FF4D172F4614123BFAED /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +150,7 @@
 				TargetAttributes = {
 					97F311D21DA0204100E38A10 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = T9CPVE2F3P;
+						DevelopmentTeam = 64HG5K87PK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,17 +181,66 @@
 				97F311E11DA0204200E38A10 /* LaunchScreen.storyboard in Resources */,
 				97F311DE1DA0204200E38A10 /* Assets.xcassets in Resources */,
 				97F311DC1DA0204200E38A10 /* Main.storyboard in Resources */,
+				97F311E91DA020D000E38A10 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3324FF4D172F4614123BFAED /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ivan-social/Pods-ivan-social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A05AE251320243E9523A075D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ivan-social/Pods-ivan-social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0CC7E95FDED92942A472682 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		97F311CF1DA0204100E38A10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97F311D91DA0204200E38A10 /* ViewController.swift in Sources */,
+				97F311D91DA0204200E38A10 /* SignInVC.swift in Sources */,
 				97F311D71DA0204200E38A10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,9 +362,10 @@
 		};
 		97F311E61DA0204200E38A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CE0FB98F39465F742994ADC /* Pods-ivan-social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T9CPVE2F3P;
+				DEVELOPMENT_TEAM = 64HG5K87PK;
 				INFOPLIST_FILE = "ivan-social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.IvanSlavov.ivan-social";
@@ -272,9 +376,10 @@
 		};
 		97F311E71DA0204200E38A10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 520987680ADB953AAC7AC880 /* Pods-ivan-social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T9CPVE2F3P;
+				DEVELOPMENT_TEAM = 64HG5K87PK;
 				INFOPLIST_FILE = "ivan-social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.IvanSlavov.ivan-social";
@@ -302,6 +407,7 @@
 				97F311E71DA0204200E38A10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
