@@ -12,7 +12,7 @@ class SignInVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("test")
+        print("test1")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
