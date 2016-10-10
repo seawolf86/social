@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5E52FABEA27E26BAAD47AB3C /* Pods_ivan_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F043008F2D3C123C96C4CB7 /* Pods_ivan_social.framework */; };
+		9791A9F01DAC02EA0003D512 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791A9EF1DAC02EA0003D512 /* FancyView.swift */; };
+		9791A9F31DAC03910003D512 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791A9F21DAC03910003D512 /* Constants.swift */; };
+		9791A9F51DAC05800003D512 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791A9F41DAC05800003D512 /* RoundBtn.swift */; };
+		9791A9F71DAC07950003D512 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791A9F61DAC07950003D512 /* FancyField.swift */; };
+		9791A9F91DAC08D90003D512 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791A9F81DAC08D90003D512 /* FancyBtn.swift */; };
 		97F311D71DA0204200E38A10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F311D61DA0204200E38A10 /* AppDelegate.swift */; };
 		97F311D91DA0204200E38A10 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F311D81DA0204200E38A10 /* SignInVC.swift */; };
 		97F311DC1DA0204200E38A10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F311DA1DA0204200E38A10 /* Main.storyboard */; };
@@ -20,6 +25,11 @@
 		0CE0FB98F39465F742994ADC /* Pods-ivan-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ivan-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ivan-social/Pods-ivan-social.debug.xcconfig"; sourceTree = "<group>"; };
 		2F043008F2D3C123C96C4CB7 /* Pods_ivan_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ivan_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		520987680ADB953AAC7AC880 /* Pods-ivan-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ivan-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-ivan-social/Pods-ivan-social.release.xcconfig"; sourceTree = "<group>"; };
+		9791A9EF1DAC02EA0003D512 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		9791A9F21DAC03910003D512 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9791A9F41DAC05800003D512 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		9791A9F61DAC07950003D512 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		9791A9F81DAC08D90003D512 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		97F311D31DA0204200E38A10 /* ivan-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ivan-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F311D61DA0204200E38A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F311D81DA0204200E38A10 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -50,6 +60,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9791A9F11DAC036A0003D512 /* Utill */ = {
+			isa = PBXGroup;
+			children = (
+				9791A9F21DAC03910003D512 /* Constants.swift */,
+			);
+			name = Utill;
+			sourceTree = "<group>";
+		};
 		97A386971DA0235700155BEA /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +78,10 @@
 		97A386981DA0236200155BEA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9791A9EF1DAC02EA0003D512 /* FancyView.swift */,
+				9791A9F41DAC05800003D512 /* RoundBtn.swift */,
+				9791A9F61DAC07950003D512 /* FancyField.swift */,
+				9791A9F81DAC08D90003D512 /* FancyBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -93,6 +115,7 @@
 		97F311D51DA0204200E38A10 /* ivan-social */ = {
 			isa = PBXGroup;
 			children = (
+				9791A9F11DAC036A0003D512 /* Utill */,
 				97A386971DA0235700155BEA /* Model */,
 				97A386981DA0236200155BEA /* View */,
 				97A386991DA0236800155BEA /* Controller */,
@@ -240,8 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9791A9F71DAC07950003D512 /* FancyField.swift in Sources */,
 				97F311D91DA0204200E38A10 /* SignInVC.swift in Sources */,
+				9791A9F51DAC05800003D512 /* RoundBtn.swift in Sources */,
 				97F311D71DA0204200E38A10 /* AppDelegate.swift in Sources */,
+				9791A9F01DAC02EA0003D512 /* FancyView.swift in Sources */,
+				9791A9F31DAC03910003D512 /* Constants.swift in Sources */,
+				9791A9F91DAC08D90003D512 /* FancyBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
