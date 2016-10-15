@@ -30,6 +30,7 @@
 		9791A9F41DAC05800003D512 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		9791A9F61DAC07950003D512 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		9791A9F81DAC08D90003D512 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		97CC81741DB2676600D0DB30 /* ivan-social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ivan-social.entitlements"; sourceTree = "<group>"; };
 		97F311D31DA0204200E38A10 /* ivan-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ivan-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F311D61DA0204200E38A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F311D81DA0204200E38A10 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 		97F311D51DA0204200E38A10 /* ivan-social */ = {
 			isa = PBXGroup;
 			children = (
+				97CC81741DB2676600D0DB30 /* ivan-social.entitlements */,
 				9791A9F11DAC036A0003D512 /* Utill */,
 				97A386971DA0235700155BEA /* Model */,
 				97A386981DA0236200155BEA /* View */,
@@ -175,6 +177,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 64HG5K87PK;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -393,6 +400,7 @@
 			baseConfigurationReference = 0CE0FB98F39465F742994ADC /* Pods-ivan-social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ivan-social/ivan-social.entitlements";
 				DEVELOPMENT_TEAM = 64HG5K87PK;
 				INFOPLIST_FILE = "ivan-social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -407,6 +415,7 @@
 			baseConfigurationReference = 520987680ADB953AAC7AC880 /* Pods-ivan-social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "ivan-social/ivan-social.entitlements";
 				DEVELOPMENT_TEAM = 64HG5K87PK;
 				INFOPLIST_FILE = "ivan-social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -82,3 +82,14 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-ivan-social/Bolts.framework"
+  install_framework "Pods-ivan-social/FBSDKCoreKit.framework"
+  install_framework "Pods-ivan-social/FBSDKLoginKit.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-ivan-social/Bolts.framework"
+  install_framework "Pods-ivan-social/FBSDKCoreKit.framework"
+  install_framework "Pods-ivan-social/FBSDKLoginKit.framework"
+fi
