@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E52FABEA27E26BAAD47AB3C /* Pods_ivan_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F043008F2D3C123C96C4CB7 /* Pods_ivan_social.framework */; };
 		9700922F1DBCC37C0094DDB1 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9700922E1DBCC37C0094DDB1 /* FeedVC.swift */; };
+		9772819B1DD105A900788792 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772819A1DD105A900788792 /* CircleView.swift */; };
 		9791A9F01DAC02EA0003D512 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791A9EF1DAC02EA0003D512 /* FancyView.swift */; };
 		9791A9F31DAC03910003D512 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791A9F21DAC03910003D512 /* Constants.swift */; };
 		9791A9F51DAC05800003D512 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791A9F41DAC05800003D512 /* RoundBtn.swift */; };
@@ -20,6 +21,7 @@
 		97F311DE1DA0204200E38A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F311DD1DA0204200E38A10 /* Assets.xcassets */; };
 		97F311E11DA0204200E38A10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F311DF1DA0204200E38A10 /* LaunchScreen.storyboard */; };
 		97F311E91DA020D000E38A10 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97F311E81DA020D000E38A10 /* GoogleService-Info.plist */; };
+		97F773E01DD61F1700BF321C /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F773DF1DD61F1700BF321C /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,7 @@
 		2F043008F2D3C123C96C4CB7 /* Pods_ivan_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ivan_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		520987680ADB953AAC7AC880 /* Pods-ivan-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ivan-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-ivan-social/Pods-ivan-social.release.xcconfig"; sourceTree = "<group>"; };
 		9700922E1DBCC37C0094DDB1 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		9772819A1DD105A900788792 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		9791A9EF1DAC02EA0003D512 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		9791A9F21DAC03910003D512 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9791A9F41DAC05800003D512 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 		97F311E01DA0204200E38A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97F311E21DA0204200E38A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97F311E81DA020D000E38A10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		97F773DF1DD61F1700BF321C /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				9791A9F41DAC05800003D512 /* RoundBtn.swift */,
 				9791A9F61DAC07950003D512 /* FancyField.swift */,
 				9791A9F81DAC08D90003D512 /* FancyBtn.swift */,
+				9772819A1DD105A900788792 /* CircleView.swift */,
+				97F773DF1DD61F1700BF321C /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9772819B1DD105A900788792 /* CircleView.swift in Sources */,
 				9791A9F71DAC07950003D512 /* FancyField.swift in Sources */,
 				97F311D91DA0204200E38A10 /* SignInVC.swift in Sources */,
 				9791A9F51DAC05800003D512 /* RoundBtn.swift in Sources */,
@@ -282,6 +289,7 @@
 				9791A9F01DAC02EA0003D512 /* FancyView.swift in Sources */,
 				9791A9F31DAC03910003D512 /* Constants.swift in Sources */,
 				9791A9F91DAC08D90003D512 /* FancyBtn.swift in Sources */,
+				97F773E01DD61F1700BF321C /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
