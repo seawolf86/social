@@ -19,6 +19,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GTMSessionFetcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>IQKeyboardManagerSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ivan-social.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2E303C3CE7513908EE880D9CA833AFAE</key>
+		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5D69761C2CD2A1E5C013537B29CAB4CF</key>
+		<key>44CAD6CE523055ED339E87154473A254</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>751774E4195784A5D670D909F60AF1FC</key>
+		<key>4DC059E04CBA98AEDDB5C34E02D551E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>980D1BF096A70FCE4F01ABBEC19989E0</key>
+		<key>63A196E40A0A769059DD26F2580AA466</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9D0F2E5EA1B46A5D72FFD42B0B39DBBC</key>
+		<key>6775572FD2946C9BB8F0139FBAC95C95</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC5000D645EEAF961C85907CDC796FE1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BEF7E6E85DB5CDE5D7A18F4F2EB8494B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
 		<dict>
 			<key>primary</key>
 			<true/>

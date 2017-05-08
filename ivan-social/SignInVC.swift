@@ -23,7 +23,9 @@ class SignInVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if let _ =  KeychainWrapper.standard.string(forKey: KEY_UID) {
-            performSegue(withIdentifier: "goToFeed", sender: nil)
+            DispatchQueue.main.async(){
+                self.performSegue(withIdentifier: "goToFeed", sender: nil)
+            }
         }
     }
 
@@ -31,7 +33,7 @@ class SignInVC: UIViewController {
         let facebookLogin = FBSDKLoginManager()
         facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
             if error != nil {
-                print("Error: Unable to authenticate with Facebook -- \(error)")
+                print("Error: Unable to authenticate with Facebook -- \(String(describing: error))")
             } else if result?.isCancelled == true {
                 print("User cancelled Facebook authentication")
             } else {
@@ -45,11 +47,12 @@ class SignInVC: UIViewController {
     func firebaseAuth(_ credential: FIRAuthCredential) {
         FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
             if error != nil {
-                print("Error: Unable to authenticate with Firebase -- \(error)")
+                print("Error: Unable to authenticate with Firebase -- \(String(describing: error))")
             } else {
                 print("Successfully authenticated with Firebase")
                 if let user = user {
-                    self.completeSignIn(id: user.uid)
+                    let userData = ["provider": credential.provider]
+                    self.completeSignIn(id: user.uid, userData: userData)
                 }
             }
         })
@@ -57,22 +60,24 @@ class SignInVC: UIViewController {
     
     @IBAction func signInTapped(_ sender: FancyBtn) {
         
-        //parolata trqbva da e pone 6 simvola -- firebase requeriment
+        //password must be at least 6 simbols -- firebase requeriment
         if let email = emailField.text, let pwd = pwdField.text {
             FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
                 if error == nil {
                     print("Email user authenticated with Firebase")
                     if let user = user {
-                        self.completeSignIn(id: user.uid)
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)
                     }
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if error != nil {
-                            print("Error: Unable to authenticate with Firebase using email --\(error)")
+                            print("Error: Unable to authenticate with Firebase using email --\(String(describing: error))")
                         } else {
                             print("Successfully authenticated with Firebase using email")
                             if let user = user {
-                                self.completeSignIn(id: user.uid)
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: user.uid, userData: userData)
                             }
                         }
                     })
@@ -82,9 +87,12 @@ class SignInVC: UIViewController {
     }
     
     
-    func completeSignIn(id: String) {
+    func completeSignIn(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
         KeychainWrapper.standard.set(id, forKey: KEY_UID)
-        performSegue(withIdentifier: "goToFeed", sender: nil)
+        DispatchQueue.main.async(){
+            self.performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
     }
 }
 

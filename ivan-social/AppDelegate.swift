@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FBSDKLoginKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
-        
+        IQKeyboardManager.sharedManager().enable = true
         
         return true
     }

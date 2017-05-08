@@ -11,4 +11,5 @@ pod 'Firebase/Database'
 pod 'Firebase/Storage'
 pod 'FBSDKLoginKit'
 pod 'SwiftKeychainWrapper'
+pod 'IQKeyboardManagerSwift'
 end

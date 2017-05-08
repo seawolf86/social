@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E52FABEA27E26BAAD47AB3C /* Pods_ivan_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F043008F2D3C123C96C4CB7 /* Pods_ivan_social.framework */; };
 		9700922F1DBCC37C0094DDB1 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9700922E1DBCC37C0094DDB1 /* FeedVC.swift */; };
+		97270F331EBF526200DFDFC6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97270F321EBF526200DFDFC6 /* Post.swift */; };
 		9772819B1DD105A900788792 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9772819A1DD105A900788792 /* CircleView.swift */; };
+		9789513C1EBE3CAA00B2DEDE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9789513B1EBE3CAA00B2DEDE /* DataService.swift */; };
 		9791A9F01DAC02EA0003D512 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791A9EF1DAC02EA0003D512 /* FancyView.swift */; };
 		9791A9F31DAC03910003D512 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791A9F21DAC03910003D512 /* Constants.swift */; };
 		9791A9F51DAC05800003D512 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791A9F41DAC05800003D512 /* RoundBtn.swift */; };
@@ -22,14 +23,15 @@
 		97F311E11DA0204200E38A10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F311DF1DA0204200E38A10 /* LaunchScreen.storyboard */; };
 		97F311E91DA020D000E38A10 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97F311E81DA020D000E38A10 /* GoogleService-Info.plist */; };
 		97F773E01DD61F1700BF321C /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F773DF1DD61F1700BF321C /* PostCell.swift */; };
+		97FF37B0F98883FBA3EC45D0 /* Pods_ivan_social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E2AB0C42185D815D3018F3 /* Pods_ivan_social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0CE0FB98F39465F742994ADC /* Pods-ivan-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ivan-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ivan-social/Pods-ivan-social.debug.xcconfig"; sourceTree = "<group>"; };
-		2F043008F2D3C123C96C4CB7 /* Pods_ivan_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ivan_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		520987680ADB953AAC7AC880 /* Pods-ivan-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ivan-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-ivan-social/Pods-ivan-social.release.xcconfig"; sourceTree = "<group>"; };
+		56D5678B85C60CC3E55C2DE2 /* Pods-ivan-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ivan-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ivan-social/Pods-ivan-social.debug.xcconfig"; sourceTree = "<group>"; };
 		9700922E1DBCC37C0094DDB1 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		97270F321EBF526200DFDFC6 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		9772819A1DD105A900788792 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		9789513B1EBE3CAA00B2DEDE /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		9791A9EF1DAC02EA0003D512 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		9791A9F21DAC03910003D512 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9791A9F41DAC05800003D512 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		97F311E21DA0204200E38A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97F311E81DA020D000E38A10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		97F773DF1DD61F1700BF321C /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		AAB13BE0FDFDDD1B18BEB453 /* Pods-ivan-social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ivan-social.release.xcconfig"; path = "Pods/Target Support Files/Pods-ivan-social/Pods-ivan-social.release.xcconfig"; sourceTree = "<group>"; };
+		B2E2AB0C42185D815D3018F3 /* Pods_ivan_social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ivan_social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,19 +56,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E52FABEA27E26BAAD47AB3C /* Pods_ivan_social.framework in Frameworks */,
+				97FF37B0F98883FBA3EC45D0 /* Pods_ivan_social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2716E88A3A0C834A9F2B2782 /* Frameworks */ = {
+		3B93A33443CBC0C9CCCF8C90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F043008F2D3C123C96C4CB7 /* Pods_ivan_social.framework */,
+				B2E2AB0C42185D815D3018F3 /* Pods_ivan_social.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9789513A1EBE3C6800B2DEDE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9789513B1EBE3CAA00B2DEDE /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		9791A9F11DAC036A0003D512 /* Utill */ = {
@@ -78,6 +90,7 @@
 		97A386971DA0235700155BEA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				97270F321EBF526200DFDFC6 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -109,8 +122,8 @@
 			children = (
 				97F311D51DA0204200E38A10 /* ivan-social */,
 				97F311D41DA0204200E38A10 /* Products */,
-				9908E257C9B6F886405AB312 /* Pods */,
-				2716E88A3A0C834A9F2B2782 /* Frameworks */,
+				E8D2447732F62742AB08DF8D /* Pods */,
+				3B93A33443CBC0C9CCCF8C90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +138,7 @@
 		97F311D51DA0204200E38A10 /* ivan-social */ = {
 			isa = PBXGroup;
 			children = (
+				9789513A1EBE3C6800B2DEDE /* Services */,
 				97CC81741DB2676600D0DB30 /* ivan-social.entitlements */,
 				9791A9F11DAC036A0003D512 /* Utill */,
 				97A386971DA0235700155BEA /* Model */,
@@ -140,11 +154,11 @@
 			path = "ivan-social";
 			sourceTree = "<group>";
 		};
-		9908E257C9B6F886405AB312 /* Pods */ = {
+		E8D2447732F62742AB08DF8D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0CE0FB98F39465F742994ADC /* Pods-ivan-social.debug.xcconfig */,
-				520987680ADB953AAC7AC880 /* Pods-ivan-social.release.xcconfig */,
+				56D5678B85C60CC3E55C2DE2 /* Pods-ivan-social.debug.xcconfig */,
+				AAB13BE0FDFDDD1B18BEB453 /* Pods-ivan-social.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -156,12 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97F311E51DA0204200E38A10 /* Build configuration list for PBXNativeTarget "ivan-social" */;
 			buildPhases = (
-				C0CC7E95FDED92942A472682 /* Check Pods Manifest.lock */,
+				34025B1FAFA30FB292D1F66D /* [CP] Check Pods Manifest.lock */,
 				97F311CF1DA0204100E38A10 /* Sources */,
 				97F311D01DA0204100E38A10 /* Frameworks */,
 				97F311D11DA0204100E38A10 /* Resources */,
-				A05AE251320243E9523A075D /* Embed Pods Frameworks */,
-				3324FF4D172F4614123BFAED /* Copy Pods Resources */,
+				4330A902F2DE49D208AC6830 /* [CP] Embed Pods Frameworks */,
+				C7EA45F4C81907745AD60B62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,7 +193,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Ivan Slavov";
 				TargetAttributes = {
 					97F311D21DA0204100E38A10 = {
@@ -228,29 +242,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3324FF4D172F4614123BFAED /* Copy Pods Resources */ = {
+		34025B1FAFA30FB292D1F66D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ivan-social/Pods-ivan-social-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A05AE251320243E9523A075D /* Embed Pods Frameworks */ = {
+		4330A902F2DE49D208AC6830 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,19 +272,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ivan-social/Pods-ivan-social-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C0CC7E95FDED92942A472682 /* Check Pods Manifest.lock */ = {
+		C7EA45F4C81907745AD60B62 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ivan-social/Pods-ivan-social-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -283,8 +297,10 @@
 				9772819B1DD105A900788792 /* CircleView.swift in Sources */,
 				9791A9F71DAC07950003D512 /* FancyField.swift in Sources */,
 				97F311D91DA0204200E38A10 /* SignInVC.swift in Sources */,
+				97270F331EBF526200DFDFC6 /* Post.swift in Sources */,
 				9791A9F51DAC05800003D512 /* RoundBtn.swift in Sources */,
 				97F311D71DA0204200E38A10 /* AppDelegate.swift in Sources */,
+				9789513C1EBE3CAA00B2DEDE /* DataService.swift in Sources */,
 				9700922F1DBCC37C0094DDB1 /* FeedVC.swift in Sources */,
 				9791A9F01DAC02EA0003D512 /* FancyView.swift in Sources */,
 				9791A9F31DAC03910003D512 /* Constants.swift in Sources */,
@@ -333,6 +349,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -383,6 +400,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -410,8 +428,9 @@
 		};
 		97F311E61DA0204200E38A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CE0FB98F39465F742994ADC /* Pods-ivan-social.debug.xcconfig */;
+			baseConfigurationReference = 56D5678B85C60CC3E55C2DE2 /* Pods-ivan-social.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "ivan-social/ivan-social.entitlements";
 				DEVELOPMENT_TEAM = 64HG5K87PK;
@@ -425,8 +444,9 @@
 		};
 		97F311E71DA0204200E38A10 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 520987680ADB953AAC7AC880 /* Pods-ivan-social.release.xcconfig */;
+			baseConfigurationReference = AAB13BE0FDFDDD1B18BEB453 /* Pods-ivan-social.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "ivan-social/ivan-social.entitlements";
 				DEVELOPMENT_TEAM = 64HG5K87PK;
